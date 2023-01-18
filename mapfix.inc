@@ -23,12 +23,12 @@
 	#define mf_SetObjectMaterial SetDynamicObjectMaterial
 	#define mf_DestroyObject DestroyDynamicObject
 #else
-	#define mf_CreateObject CreateObject
+	#define mf_CreateObject(%0,%1,%2,%3,%4,%5,%6,%7) CreateObject(%0,%1,%2,%3,%4,%5,%6)
 	#define mf_SetObjectMaterial SetObjectMaterial
 	#define mf_DestroyObject DestroyObject
 #endif
 
-#define mf_CreateFloorObject CreateObject
+#define mf_CreateFloorObject(%0,%1,%2,%3,%4,%5,%6,%7) CreateObject(%0,%1,%2,%3,%4,%5,%6)
 #define mf_DestroyFloorObject DestroyObject
 
 static
